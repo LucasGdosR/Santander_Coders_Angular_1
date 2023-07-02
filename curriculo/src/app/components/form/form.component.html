@@ -17,7 +17,7 @@
       <div class="row">
         <mat-form-field class="col-sm-9 col-md-7 col-lg-6 col-xl-5 col-xxl-4" appearance="outline">
           <mat-label>Telefone</mat-label>
-          <input matInput formControlName="phone" />
+          <input [mask]="phoneMask" matInput formControlName="phone" />
           <mat-error>(xx) x xxxx-xxxx</mat-error>
         </mat-form-field>
       </div>
