@@ -1,1 +1,43 @@
-<p>form works!</p>
+<div class="container">
+  <form [formGroup]="contactForm">
+    <fieldset>
+      <legend class="display-6">Contato</legend>
+      <div class="row">
+          <mat-form-field class="col-sm-9 col-md-7 col-lg-6 col-xl-5 col-xxl-4" appearance="outline">
+            <mat-label>Nome Completo</mat-label>
+            <input matInput formControlName="name" />
+          </mat-form-field>
+      </div>
+      <div class="row">
+          <mat-form-field class="col-sm-9 col-md-7 col-lg-6 col-xl-5 col-xxl-4" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" />
+          </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field class="col-sm-9 col-md-7 col-lg-6 col-xl-5 col-xxl-4" appearance="outline">
+          <mat-label>Telefone</mat-label>
+          <input [mask]="phoneMask" matInput formControlName="phone" />
+          <mat-error>(xx) x xxxx-xxxx</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field class="col-sm-9 col-md-7 col-lg-6 col-xl-5 col-xxl-4" appearance="outline">
+          <mat-label>Assunto</mat-label>
+          <mat-select formControlName="subject">
+            <mat-option *ngFor="let subject of subjects" [value]="subject.value">
+              {{ subject.text }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Mensagem</mat-label>
+          <textarea cdkTextareaAutosize matInput formControlName="message"></textarea>
+        </mat-form-field>
+      </div>
+    </fieldset>
+  </form>
+  <button mat-raised-button (click)="onSubmit()" [disabled]="contactForm.invalid">Enviar</button>
+</div>
