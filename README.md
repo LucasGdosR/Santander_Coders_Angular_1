@@ -15,6 +15,7 @@ import Santander_Coders_Angular_1
 	"3": "Foi implementada uma seção para contato, contendo um formulário. Neste formulário deverá ser implementada a validação dos campo."
 	 
 }
+```
 
 ## LinkedIn dos Autores
 
