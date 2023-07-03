@@ -1,1 +1,40 @@
-<p>left-column works!</p>
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div class="w3-white w3-text-grey w3-card-4">
+    <div class="w3-display-container">
+        <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" style="width:100%" alt="Avatar">
+        <div class="w3-display-bottomleft w3-container w3-text-black">
+          <h2>Jane Doe</h2>
+        </div>
+    </div>
+    <div class="w3-container p-5">
+        <ul class="list-unstyled">
+            <li *ngFor="let field of fields">
+                <p><i class="fa fa-fw w3-margin-right w3-large w3-text-teal" [ngClass]="field.icon"></i> {{ field.text }}</p>
+            </li>
+        </ul>
+        <hr>
+        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+        <ul class="list-unstyled">
+            <li *ngFor="let skill of skills">
+                <p>{{ skill.text }}</p>
+                <div class="w3-light-grey w3-round-xlarge w3-small">
+                    <div class="w3-container w3-center w3-round-xlarge w3-teal" [style]="'width:'+skill.percentage+'%'">{{ skill.percentage }}%</div>
+                </div>
+            </li>
+        </ul>
+        <br>
+        <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+        <ul class="list-unstyled">
+            <li *ngFor="let language of languages">
+                <p>{{ language.text }}</p>
+                <div class="w3-light-grey w3-round-xlarge">
+                    <div class="w3-round-xlarge w3-teal" [style]="'height:24px;width:'+language.width+'%'"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+    
