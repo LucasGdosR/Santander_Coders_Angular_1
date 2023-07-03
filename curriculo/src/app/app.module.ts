@@ -7,6 +7,9 @@ import { RightColumnComponent } from './components/right-column/right-column.com
 import { FooterComponent } from './components/footer/footer.component';
 import { SectionComponent } from './components/section/section.component';
 import { FormComponent } from './components/form/form.component';
+import { EducationComponent } from './components/right-column/education/education.component';
+import { WorkExperienceComponent } from './components/right-column/work-experience/work-experience.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -15,10 +18,13 @@ import { FormComponent } from './components/form/form.component';
     RightColumnComponent,
     FooterComponent,
     SectionComponent,
-    FormComponent
+    FormComponent,
+    EducationComponent,
+    WorkExperienceComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
