@@ -12,7 +12,7 @@ import Santander_Coders_Angular_1
 {
 	"1": "Ao menos três componentes distintos, além do componente principal da aplicação",
 	"2": "Aplicar estilos específicos para cada componente;",
-	"3": "Foi implementada uma seção para contato, contendo um formulário. Neste formulário deverá ser implementada a validação dos campo."
+	"3": "Foi implementada uma seção para contato, contendo um formulário. Todos os campos passam por uma validação."
 	 
 }
 ```
