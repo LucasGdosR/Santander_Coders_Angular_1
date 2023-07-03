@@ -1,0 +1,15 @@
+.fa{
+    margin: 3px !important;
+}
+
+i{
+    margin-bottom: 30px !important;
+}
+
+i:hover{
+    transform: scale(1.5) !important;
+}
+
+p{
+    margin: 15px 0px;
+}
