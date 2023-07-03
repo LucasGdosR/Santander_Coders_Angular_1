@@ -20,6 +20,6 @@ import Santander_Coders_Angular_1
 ## LinkedIn dos Autores
 
 [Antonio Neto](https://www.linkedin.com/in/aasneto/) -
-[Danilo Chaimsohn](https://www.linkedin.com/in/danilo-chaimsohn-gon%C3%A7alves-b5446a14b/)
-[Lucas Gribel](https://www.linkedin.com/in/lucasgribeldosreis/)
+[Danilo Chaimsohn](https://www.linkedin.com/in/danilo-chaimsohn-gon%C3%A7alves-b5446a14b/) -
+[Lucas Gribel](https://www.linkedin.com/in/lucasgribeldosreis/) -
 [Matheus Neris](https://www.linkedin.com/in/matheusneris/)
